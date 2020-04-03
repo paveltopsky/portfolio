@@ -1,3 +1,9 @@
+/* FONT CONNECTION
+==================================================*/
+
+/* SPECIFICATION
+==================================================*/
+
 body {
   font-family: 'Nunito', sans-serif;
   background-color: rgb(255, 132, 83);
@@ -8,4 +14,23 @@ body {
   width: 1120px;
   height: 120px;
   background-color: #fff;
+}
+
+/* HEADER
+==================================================*/
+
+.header {
+
+}
+
+.header__nav {
+
+}
+
+.header__logo {
+
+}
+
+.header__list {
+  list-style: none;
 }
