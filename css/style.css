@@ -1,36 +1,537 @@
 /* FONT CONNECTION
 ==================================================*/
 
+@font-face {
+  font-family: League Spartan;
+  src: url(../fonts/leaguespartan-bold.eot);
+  src: url(../fonts/leaguespartan-bold.eot?#iefix) format("embedded-opentype"), 
+  url(../fonts/leaguespartan-bold.woff2) format("woff2"), 
+  url(../fonts/leaguespartan-bold.woff) format("woff"), 
+  url(../fonts/leaguespartan-bold.ttf) format("truetype"), 
+  url(../fonts/leaguespartan-bold.svg#league_spartanbold) format("svg");
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: LibreBaskerville-Regular;
+  src: url(../fonts/LibreBaskerville-Regular.eot);
+  src: url(../fonts/LibreBaskerville-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/LibreBaskerville-Regular.woff) format("woff"), url(../fonts/LibreBaskerville-Regular.ttf) format("truetype"), url(../fonts/LibreBaskerville-Regular.svg#league_spartanbold) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
 /* SPECIFICATION
 ==================================================*/
 
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: rgb(255, 132, 83);
+  font-size: 16px;
+  background: #f3f3f3;
 }
 
-.prev,
-.next {
-  width: 1120px;
-  height: 120px;
-  background-color: #fff;
+::selection {
+  background: #1c1d25;
+  color: #f3f3f3;
+  text-shadow: none;
+}
+
+/* 
+  в блоке header есть маска поверх других элементов
+  поэтому всем компонентам header задан z-index,
+  чтобы поднять их наверх
+*/
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.logo-letter {
+  color: #FFF;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 70px;
+}
+
+.block-subtitle {
+  font-family: 'Literata', serif;
+  color: #b19386;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.block-title {
+  font-size: 2.1em;
+  color: #4a4a4a;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Nunito', sans-serif !important;
+  letter-spacing: 1px;
+  font-weight: 800;
+  background-color: #f06449;
+  background: linear-gradient(270deg,#f06449,#ef3636);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  transition: .3s ease;
+}
+
+.button__text {
+  font-size: 1.1em;
+}
+
+.button > svg {
+  position: absolute;
+  left: 105px;
+  width: 35px;
+  transition: .3s ease;
+}
+
+.button:hover {
+  transition: .3s ease;
+}
+
+.button:hover svg {
+  left: 110px;
+  transition: .3s ease;
 }
 
 /* HEADER
 ==================================================*/
 
 .header {
-
+  color: #FFF;
+  position: relative;
+  background-color: #1c1d25;
+  height: 100vh;
+  margin-bottom: 70px;
 }
 
 .header__nav {
-
 }
 
 .header__logo {
-
+  z-index: 2;
 }
 
 .header__list {
   list-style: none;
+  z-index: 2;
+}
+
+.header__list-item {
+  
+}
+
+.header__list-item a {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #b0b2c3;
+}
+
+.header__content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.header__content-wrap {
+  padding-left: 60px;
+  width: 77%;
+  margin: 0 auto;
+}
+
+.header__content-title {
+  font-size: 78px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.header__content-subtitle {
+  font-family: LibreBaskerville-Regular;
+  margin-bottom: 30px;
+}
+
+.social-vertical-stripe {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+  z-index: 2;
+}
+
+.social-vertical-stripe__item {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.social-vertical-stripe__item:hover .social-path {
+  fill: #FFF !important;
+  transition: fill .3s ease;
+  cursor: pointer;
+}
+
+.social-vertical-stripe__item:hover {
+  cursor: pointer;
+}
+
+/* font-family: 'Literata', serif; */
+
+/* parallax-mask */
+
+.parallax-mask {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.parallax-mask svg {
+  position: absolute;
+}
+
+.parallax-mask svg:nth-child(1) {
+  top: 30px;
+  left: 50px;
+}
+
+.parallax-mask svg:nth-child(2) {
+  top: 130px;
+  left: 450px;
+}
+
+.parallax-mask svg:nth-child(3) {
+  right: 30px;
+  left: 150px;
+}
+
+.parallax-mask svg:nth-child(4) {
+  bottom: 310px;
+  right: 150px;
+}
+
+.parallax-mask svg:nth-child(5) {
+  top: 550px;
+  left: 150px;
+}
+
+.parallax-mask svg:nth-child(6) {
+  top: 30px;
+  right: 50px;
+}
+
+/* MAIN
+==================================================*/
+
+.main {
+
+}
+
+.main-content {
+  width: 76%;
+  margin: 0 auto;
+}
+
+.main__item {
+  position: relative;
+  font-family: League Spartan;
+  color: #FFF;
+  background-color: rgba(0, 74, 185, 0.384);
+  box-shadow: 0 20px 80px 0 rgba(0,0,0,.45);
+  width: 80%;
+  height: 480px;
+  transform: translateX(25px);
+  margin: 0 auto;
+  margin-bottom: 135px;
+  transition: all .35s ease;
+}
+
+.main__item:hover {
+  box-shadow: 0 20px 80px 0 rgba(0,0,0,.65);
+  transition: all .35s ease;
+}
+
+.main__item:hover .main__item-info {
+  transform: scale(1.08);
+  transition: all .35s ease;
+  transition-delay: .4s;
+}
+
+.main-item--right-shift {
+  transform: translateX(25px);
+}
+
+.main-item--left-shift {
+  transform: translateX(-25px);
+}
+
+.main__item-info {
+  position: absolute;
+  transition: all .35s ease;
+  transition-delay: .3s;
+}
+
+.main__item-info--left-shift {
+  left: 90px;
+  bottom: 90px;
+}
+
+.main__item-info--right-shift {
+  text-align: right;
+  right: 90px;
+  bottom: 90px;
+}
+
+.main__item-title {
+  font-size: 2.9em;
+  margin-bottom: 6px;
+}
+
+.main__item-subtitle {
+  font-family: 'Literata', serif;
+  margin-bottom: 20px;
+}
+
+/* number */
+
+.main__item-number {
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -45px;
+  width: 265px;
+  height: 198px;
+  font-size: 11.5625em;
+  overflow: hidden;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
+  color: #99999d;
+  -webkit-transform: translateY(15px);
+  transform: translateY(15px);
+  opacity: 0;
+  transition: opacity .3s, -webkit-transform .45s cubic-bezier(.694, .048, .335, 1);
+  transition: opacity .3s, transform .45s cubic-bezier(.694, .048, .335, 1);
+  transition: opacity .3s, transform .45s cubic-bezier(.694, .048, .335, 1), -webkit-transform .45s cubic-bezier(.694, .048, .335, 1);
+  z-index: 90
+}
+
+.main__item__mask-back,
+.main__item__mask-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.main__item__mask-overlay {
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  color: transparent
+}
+
+.main__item__mask-overlay,
+.main__item__mask-overlay:before {
+  transition: -webkit-transform .6s cubic-bezier(.694, .048, .335, 1) 0s;
+  transition: transform .6s cubic-bezier(.694, .048, .335, 1) 0s;
+  transition: transform .6s cubic-bezier(.694, .048, .335, 1) 0s, -webkit-transform .6s cubic-bezier(.694, .048, .335, 1) 0s
+}
+
+.main__item__mask-overlay:before {
+  content: attr(data-index);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0)
+}
+
+.main__item:hover .main__item-number {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0)
+}
+
+.main__item:hover .main__item__mask-overlay,
+.main__item:hover .main__item__mask-overlay:before {
+  transition-delay: .4s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0)
+}
+
+.main__item-number--right-shift {
+  text-align: left;
+  top: -10px;
+  right: -45px;
+}
+
+.main__item-number--left-shift {
+  text-align: left;
+  top: -10px;
+  left: -45px;
+}
+
+/* EXP
+==================================================*/
+
+.exp {
+  
+}
+
+.exp__item {
+  width: 25%;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 20px 60px 0 rgba(0,0,0,.15);
+}
+
+.exp__item:hover .exp__item-circle {
+  transform: scale(1.1);
+  /* transition-delay: .4s; */
+  transition: all .45s ease;
+}
+
+.exp__item-img {
+  
+}
+
+.exp__item-circle {
+  margin: 0 auto;
+  width: 230px;
+  height: 230px;
+  background-color: green;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 60px;
+  transition: all .3s ease;
+}
+
+.exp__item-info {
+  position: relative;
+}
+
+exp__item-text {
+
+}
+
+.exp__item-title {
+  font-weight: 900;
+  font-size: .625em;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.exp__item-title::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -13px;
+  width: 8px;
+  height: 1.5px;
+  background-color: #000;
+}
+
+.exp__item-subtitle {
+  font-size: .75em;
+  font-family: LibreBaskerville-Regular, Times New Roman, serif;
+}
+
+.exp__item-num {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+  font-size: 8px;
+  width: 1.5px;
+  height: 30px;
+  background-color: rgb(0, 0, 0);
+  transition: all .45s ease;
+}
+
+.exp__item-num::before {
+  content: "01";
+  position: absolute;
+  transform: rotate(90deg);
+  font-family: LibreBaskerville-Regular, Times New Roman, serif;
+  top: -20px;
+  right: -5px;
+  transition: all .45s ease;
+}
+
+.exp__item-num::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 1.5px;
+  height: 10px;
+  background-color: rgb(0, 0, 0);
+  transition: all .45s ease;
+}
+
+.exp__item:hover .exp__item-num,
+.exp__item:hover .exp__item-num::after {
+  width: 2px;
+  transition: all .45s ease;
+}
+
+.exp__item:hover .exp__item-num::after {
+  top: -10px;
+}
+
+.exp__item:hover .exp__item-num::before {
+  top: -35px;
+  transition: all .45s ease;
+  transition-delay: .2s;
+}
+
+/* FOOTER
+==================================================*/
+
+.footer {
+  background-color: #1c1d25;
+  color: #FFF;
+  padding: 8% 0;
+}
+
+.footer__logo {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__list-item a {
+  color: #FFF;
+  font-family: League Spartan, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.footer__copy {
+  font-family: LibreBaskerville-Regular;
+  padding-top: 15px;
+  text-align: center;
+  font-size: .75em;
 }

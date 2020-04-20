@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница Админа</title>
+    <!-- Normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Main style File -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Admin style File -->
+    <link href="css/admin-page.css" rel="stylesheet">
+    <!-- Bootstrap 4 stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Панель управления</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item link1">
+              <a class="nav-link" href="#">Пользователи<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item link2">
+              <a class="nav-link" href="#">Отделы</a>
+            </li>
+            <li class="nav-item link3">
+              <a class="nav-link" href="#">Блюда</a>
+            </li>
+            <li class="nav-item link4">
+              <a class="nav-link" href="#">Меню</a>
+            </li>
+            <li class="nav-item link5">
+              <a class="nav-link" href="#">Заказы</a>
+            </li>
+            <li class="nav-item link6">
+              <a class="nav-link" href="#">История</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <section class="admin__table-users">
+        <input class="editUser addNew-btn" type="submit" value="Добавить нового пользователя">
+        <table>
+            <tr>
+                <th>Логин</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Номер телефона</th>
+                <th>Действия</th>
+            </tr>
+            <tr>
+                <td>eme5</td>
+                <td>Емелев</td>
+                <td>Константин</td>
+                <td>9687744559</td>
+                <td><input class="editUser" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>eme5</td>
+                <td>Емелев</td>
+                <td>Константин</td>
+                <td>9687744559</td>
+                <td><input class="editUser" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>eme5</td>
+                <td>Емелев</td>
+                <td>Константин</td>
+                <td>9687744559</td>
+                <td><input class="editUser" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>eme5</td>
+                <td>Емелев</td>
+                <td>Константин</td>
+                <td>9687744559</td>
+                <td><input class="editUser" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>eme5</td>
+                <td>Емелев</td>
+                <td>Константин</td>
+                <td>9687744559</td>
+                <td><input class="editUser" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="editUserForm form">
+        <form name="test">
+            <p>Фамилия<br>
+                <input type="text" size="30">
+            </p>
+            <p>Имя<br>
+                <input type="text" size="30">
+            </p>
+            <p>Отчество<br>
+                <input type="text" size="30">
+            </p>
+            <p>Адрес<br>
+                <input type="text" size="30">
+            </p>
+            <p>Права пользователя<br>
+             <input name="rad" type="radio" value="ie">Пользователь<Br>
+             <input name="rad" type="radio" value="firefox">Администратор<Br>
+            </p>
+            <p>Номер телефона<br>
+                <input type="text" size="30">
+            </p>
+            <p>login<br>
+                <input type="text" size="30">
+            </p>
+            <p>password<br>
+                <input type="text" size="30">
+            </p>
+            <p><input class="backUserBtn" type="submit" value="Сохранить" style="margin-top: 20px;"></p>
+        </form>
+    </div>
+
+    <section class="admin__table-depart">
+        <input class="editDepart addNew-btn" type="submit" value="Добавить новое отделение">
+        <table>
+            <tr>
+                <th>Название отдела</th>
+                <th>Номер телефона</th>
+                <th>Местоположение</th>
+                <th>Режим доступа</th>
+                <th>Действия</th>
+            </tr>
+            <tr>
+                <td>строительная площадка №5</td>
+                <td>9622566655</td>
+                <td>За городом</td>
+                <td>свободный</td>
+                <td><input class="editDepart" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>строительная площадка №5</td>
+                <td>9622566655</td>
+                <td>За городом</td>
+                <td>свободный</td>
+                <td><input class="editDepart" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>строительная площадка №5</td>
+                <td>9622566655</td>
+                <td>За городом</td>
+                <td>свободный</td>
+                <td><input class="editDepart" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>строительная площадка №5</td>
+                <td>9622566655</td>
+                <td>За городом</td>
+                <td>свободный</td>
+                <td><input class="editDepart" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="editDepartForm form">
+        <form name="test">
+            <p>Название отдела<br>
+                <input type="text" size="30">
+            </p>
+            <p>Номер телефона<br>
+                <input type="text" size="30">
+            </p>
+            <p>Местоположение<br>
+                <input type="text" size="30">
+            </p>
+            <p>Информация по доступу<br>
+                <input type="text" size="30">
+            </p>
+            <p>Ответственный за распределение заказов<br>
+                <select name="selectForm">
+                    <option value="s1" selected>Иванов Иван</option>
+                    <option value="s2">Марков Михаил</option>
+                    <option value="s3">Кузнецов Валерий</option>
+                    <option value="s3">Новиков Виктор</option>
+                </select> 
+            </p>
+            <p><input class="backDepartBtn" type="submit" value="Сохранить" style="margin-top: 20px;"></p>
+        </form>
+    </div>
+
+    <section class="admin__table-food">
+        <input class="editFood addNew-btn" type="submit" value="Изменить позицию меню">
+        <table>
+            <tr>
+                <th>Название</th>
+                <th>Размер порции, гр</th>
+                <th>Белки</th>
+                <th>Жиры</th>
+                <th>Углеводы</th>
+                <th>Калории</th>
+                <th>Действия</th>
+            </tr>
+            <tr>
+                <td>Сок гранатовый</td>
+                <td>200</td>
+                <td>45</td>
+                <td>76</td>
+                <td>7</td>
+                <td>877</td>
+                <td><input class="editFood" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>Сок гранатовый</td>
+                <td>200</td>
+                <td>45</td>
+                <td>76</td>
+                <td>7</td>
+                <td>877</td>
+                <td><input class="editFood" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>Сок гранатовый</td>
+                <td>200</td>
+                <td>45</td>
+                <td>76</td>
+                <td>7</td>
+                <td>877</td>
+                <td><input class="editFood" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="editFoodForm form">
+        <form name="test">
+            <p>Название блюда<br>
+                <input type="text" size="30">
+            </p>
+            <p>Объём порции<br>
+                <input type="text" size="30">
+            </p>
+            <p>Белки на 100 гр<br>
+                <input type="text" size="30">
+            </p>
+            <p>Жиры на 100 гр<br>
+                <input type="text" size="30">
+            </p>
+            <p>Углеводы на 100 гр<br>
+                <input type="text" size="30">
+            </p>
+            <p>Калории на 100 гр<br>
+                <input type="text" size="30">
+            </p>
+            <p>Ссылка на изображение<br>
+                <input type="text" size="30">
+            </p>
+            <p><input class="backFoodBtn" type="submit" value="Сохранить" style="margin-top: 20px;"></p>
+        </form>
+    </div>
+
+    <section class="admin__table-menu">
+        <input class="editMenu addNew-btn" type="submit" value="Изменить меню">
+        <table>
+            <tr>
+                <th>Название</th>
+                <th>Размер порции, гр</th>
+                <th>Калории</th>
+                <th>Категория</th>
+                <th>Цена</th>
+                <th>День недели</th>
+                <th>Действия</th>
+            </tr>
+            <tr>
+                <td>Сок гранатовый</td>
+                <td>200</td>
+                <td>877</td>
+                <td>Напитки</td>
+                <td>30</td>
+                <td>Пятница</td>
+                <td><input class="editMenu" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>Сок гранатовый</td>
+                <td>200</td>
+                <td>877</td>
+                <td>Напитки</td>
+                <td>30</td>
+                <td>Пятница</td>
+                <td><input class="editMenu" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+            <tr>
+                <td>Сок гранатовый</td>
+                <td>200</td>
+                <td>877</td>
+                <td>Напитки</td>
+                <td>30</td>
+                <td>Пятница</td>
+                <td><input class="editMenu" type="submit" value="Редактировать"><input type="submit" value="Удалить"></td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="editMenuForm form">
+        <form name="test">
+            <p>Название блюда<br>
+                <input type="text" size="30">
+            </p>
+            <p>Объём порции<br>
+                <input type="text" size="30">
+            </p>
+            <p>Калории на 100гр<br>
+                <input type="text" size="30">
+            </p>
+            <p>Цена за порцию<br>
+                <input type="text" size="30">
+            </p> <br>
+            <select name="selectForm">
+                <option value="s1" selected>Пончик</option>
+                <option value="s2">Пирожок с яблоком</option>
+                <option value="s3">Пирожок с капустой</option>
+                <option value="s3">Круасан с шоколадом</option>
+                <option value="s1">Блинчики со сгущенкой</option>
+                <option value="s2">Бутерброд с колбасой и сыром</option>
+                <option value="s3">Творожная запеканка</option>
+                <option value="s3">Пирожок с ветчиной и сыром</option>
+                <option value="s1">Гамбургер</option>
+                <option value="s2">Хот-Дог</option>
+                <option value="s3">Салат из моркови с изюмом</option>
+                <option value="s3">Салат свекольный</option>
+                <option value="s1">Салат Цезарь</option>
+                <option value="s2">Салат "Столичный" с курицей</option>
+                <option value="s3">Салат картофельный с грибами</option>
+                <option value="s3">Винегрет овощной</option>
+                <option value="s1">Салат витаминный</option>
+                <option value="s2">Салат Мимоза</option>
+                <option value="s3">Салат ольвье</option>
+                <option value="s3">Селедка под шубой</option>
+                <option value="s1">Суп пюре грибной</option>
+                <option value="s2">Щи</option>
+                <option value="s3">Рассольник с курицей</option>
+                <option value="s3">Суп гороховый</option>
+                <option value="s1">Окрошка</option>
+                <option value="s2">Борщ</option>
+                <option value="s3">Пельмени</option>
+                <option value="s3">Рыба под маринадом</option>
+                <option value="s1">Котлеты куриные</option>
+                <option value="s2">Котлеты рыбные</option>
+                <option value="s3">Сок гранатовый</option>
+                <option value="s3">Сок персиковый</option>
+                <option value="s1">Чай зеленый</option>
+                <option value="s2">Чай черный</option>
+                <option value="s3">Лимонад Дюшес</option>
+                <option value="s3">Сок яблочный</option>
+                <option value="s1">Сок вишневый</option>
+                <option value="s2">Сок апельсиновый</option>
+                <option value="s3">Капучино</option>
+                <option value="s3">Американо</option>
+            </select> <p><br>
+                <select name="selectForm">
+                    <option value="s1" selected>Понедельник</option>
+                    <option value="s2">Вторник</option>
+                    <option value="s3">Среда</option>
+                    <option value="s4">Четверг</option>
+                    <option value="s5">Пятница</option>
+                </select> </p> 
+            </input> <br>
+                <select name="selectForm">
+                    <option value="s1" selected>Горячее</option>
+                    <option value="s2">Выпечка</option>
+                    <option value="s3">Салаты</option>
+                    <option value="s3">Напитки</option>
+                </select> 
+            </p>
+            <p><input class="backMenuBtn" type="submit" value="Сохранить" style="margin-top: 20px;"></p>
+        </form>
+    </div>
+
+    <section class="admin__table-orders">
+        <div class="table-title">Заказ пользователя Ivan Ivan</div>
+        <table>
+            <tr>
+                <th>Название</th>
+                <th>Размер порции, гр</th>
+                <th>Количество</th>
+                <th>Категория</th>
+                <th>Цена</th>
+                <th>Общая стоимость</th>
+            </tr>
+            <tr>
+                <td>Борщ</td>
+                <td>300</td>
+                <td>1</td>
+                <td>Горячее</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+        </table>
+        <div class="table-title">Заказ пользователя Птицын Александр</div>
+        <table>
+            <tr>
+                <th>Название</th>
+                <th>Размер порции, гр</th>
+                <th>Количество</th>
+                <th>Категория</th>
+                <th>Цена</th>
+                <th>Общая стоимость</th>
+            </tr>
+            <tr>
+                <td>Борщ</td>
+                <td>300</td>
+                <td>1</td>
+                <td>Горячее</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="admin__table-history">
+        <div class="table-title">Заказы пользователя Ivan Ivan</div>
+        <table>
+            <tr>
+                <th>Название</th>
+                <th>Размер порции, гр</th>
+                <th>Дата заказа</th>
+                <th>Количество</th>
+                <th>Категория</th>
+                <th>Цена</th>
+                <th>Общая стоимость</th>
+            </tr>
+            <tr>
+                <td>Борщ</td>
+                <td>300</td>
+                <td>2020-03-11 03:38:22</td>
+                <td>1</td>
+                <td>Горячее</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+        </table>
+        <div class="table-title">Заказы пользователя Птицын Александр</div>
+        <table>
+            <tr>
+                <th>Название</th>
+                <th>Размер порции, гр</th>
+                <th>Дата заказа</th>
+                <th>Количество</th>
+                <th>Категория</th>
+                <th>Цена</th>
+                <th>Общая стоимость</th>
+            </tr>
+            <tr>
+                <td>Борщ</td>
+                <td>300</td>
+                <td>2020-03-11 03:38:22</td>
+                <td>2</td>
+                <td>Горячее</td>
+                <td>200</td>
+                <td>200</td>
+            </tr>
+        </table>
+    </section>
+    
+    <script src="js/admin-page.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

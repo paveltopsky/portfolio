@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Riccardo Zanutta -- Interactive Front-end Developer -- https://twitter.com/RiccardoZanutta
+
+# THANKS
+
+    Coffee.
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Javascript,
+    BRick, Sass, Jade(Pug),
+    Gulp, Babel, ESLint

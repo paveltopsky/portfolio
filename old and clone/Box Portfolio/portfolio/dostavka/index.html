@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Доставка14</title>
+    <!-- Normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Main style File -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Media Queries File -->
+    <link href="css/media.css" rel="stylesheet">
+    <!-- Font connection -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 4 stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="header__nav">
+            <div class="header__nav-list">
+                <a href="index.html" class="header__nav-link">
+                    <div class="header__nav-item">Главная</div>
+                </a>
+                <a href="about.html" class="header__nav-link">
+                    <div class="header__nav-item">О нас</div>
+                </a>
+                <a href="contact.html" class="header__nav-link">
+                    <div class="header__nav-item">Контакты</div>
+                </a>
+                <a href="delivery.html" class="header__nav-link">
+                    <div class="header__nav-item">Доставка и оплата</div>
+                </a>
+            </div>
+            <div class="header__log-account">
+                <div class="header__log-img">
+                    <img src="img/sign-up.png" width="20">
+                </div>
+                <!-- <div class="header__log-text">Личный кабинет</div> -->
+                <button type="button" class="btn btn-primary logModal-btn resetModal-btn" data-toggle="modal" data-target="#logModal">
+                    Личный кабинет
+                </button>
+            </div>
+        </div>
+            <!-- /.header__nav -->
+        <div class="container1">
+            <div class="header__menu">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo-link">
+                        <div class="header__logo-img__wrap">
+                            <img src="img/logo.jpg" class="header__logo-img">
+                        </div>
+                        <div class="header__logo-text-wrap">
+                            <div class="header__logo-text">Доставка14</div>
+                            <div class="header__logo-subtext">пн-пт 10:00-16:00<br>
+                                +7-921-471-20-65 (звонок платный)</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__menu-list">
+                    <a href="order-hot-food.html" class="header__menu-link gg">
+                        <div class="header__menu-item">ГОРЯЧЕЕ</div>
+                    </a>
+                    <a href="order-salad.html" class="header__menu-link">
+                        <div class="header__menu-item">САЛАТЫ</div>
+                    </a>
+                    <a href="order-baker.html" class="header__menu-link">
+                        <div class="header__menu-item">ВЫПЕЧКА</div>
+                    </a>
+                    <a href="order-drink.html" class="header__menu-link">
+                        <div class="header__menu-item">НАПИТКИ</div>
+                    </a>
+                </div>
+                <button type="button" class="btn btn-primary cartModal-btn resetModal-btn" data-toggle="modal" data-target="#cartModal">
+                    <div class="header__menu-cart">
+                        <img src="img/cart-img.png" width="25">
+                        <div class="header__cart-text">ваш заказ: </div>
+                        <div class="header__cart-value">0</div>
+                    </div>
+                </button>
+            </div>
+            <!-- /.header__menu -->
+        </div>
+    </div>
+
+    <section class="item-wrap">
+
+        <div class="item">
+            <div class="item-img first-img"></div>
+            <div class="item-text">
+                <div class="item__title">Горячее</div>
+                <div class="item__subtitle"><i>Супы, окрошка, котлеты</i></div>
+            </div>
+            <div class="item__link">
+                <a href="order-hot-food.html"><div class="item__link-open">
+                    <i>посмотреть меню</i>
+                </div></a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-img second-img"></div>
+            <div class="item-text">
+                <div class="item__title">Салаты</div>
+                <div class="item__subtitle"><i>Салат, винегрет, блинчики</i></div>
+            </div>
+            <div class="item__link">
+                <a href="order-salad.html"><div class="item__link-open">
+                    <i>посмотреть меню</i>
+                </div></a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-img third-img"></div>
+            <div class="item-text">
+                <div class="item__title">Выпечка</div>
+                <div class="item__subtitle"><i>Пирожки, круассаны</i></div>
+            </div>
+            <div class="item__link">
+                <a href="order-baker.html"><div class="item__link-open">
+                    <i>посмотреть меню</i>
+                </div></a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-img fourth-img"></div>
+            <div class="item-text">
+                <div class="item__title">Напитки</div>
+                <div class="item__subtitle"><i>Чай, кофе, сок</i></div>
+            </div>
+            <div class="item__link">
+                <a href="order-drink.html"><div class="item__link-open">
+                    <i>посмотреть меню</i>
+                </div></a>
+            </div>
+        </div>
+        
+    </section>
+  
+  <!-- logModal start -->
+  <div class="modal fade" id="logModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><b>Авторизация</b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body logModal-body">
+
+            <div class="logModal-input-wrap">
+                <div class="logModal-row">
+                    <div class="logModal-row__text">Логин или e-mail: </div>
+                    <input type="text" name="userName" placeholder="" size="25" />
+                </div>
+            </div>
+            <hr>
+            <div class="logModal-input-wrap">
+                <div class="logModal-row">
+                    <div class="logModal-row__text">Пароль: </div>
+                    <input type="text" name="userName" placeholder="" size="25" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+          <div class="logModal__btn-wrap">
+            <a href="#" class="logModal__link">
+                <button type="button" class="logModal__login-btn logModal__entry-btn" data-dismiss="modal">войти</button>
+              </a>
+              <a href="#" class="logModal__link">
+                <button type="button" class="logModal__login-btn logModal__reg-btn" data-dismiss="modal">регистрация</button>
+              </a>
+          </div>
+          <a href="#" class="logModal__link">
+            <button type="button" class="logModal__login-btn logModal__forgot-btn" data-dismiss="modal">забыли пароль?</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- logModal end -->
+
+  <!-- cartModal start -->
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><b>Ваш заказ</b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body logModal-body cart">
+
+        </div>
+
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+          <a href="#" class="logModal__link">
+            <button type="button" class="logModal__login-btn logModal__forgot-btn">итого: <span class="cart-price">0</span> р.</button>
+          </a>
+          <div class="logModal__btn-wrap">
+            <a href="#" class="logModal__link">
+                <button type="button" class="logModal__login-btn logModal__entry-btn cartModal__pay-btn" data-dismiss="modal">оформить</button>
+              </a>
+              <a href="#" class="logModal__link">
+                <button type="button" class="logModal__login-btn logModal__reg-btn cancel" data-dismiss="modal">отменить</button>
+              </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- cartModal end -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__address">
+                    <div class="footer__title">
+                        Адрес:
+                    </div>
+                    <div class="footer__text">
+                        ОП г. Мирный ФГУП «ГВСУ № 14»
+                    </div>
+                </div>
+                <div class="footer__phone">
+                    <div class="footer__title">
+                        Телефон:
+                    </div>
+                    <div class="footer__text footer__text-phone">
+                        +7-921-471-20-65
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <div class="footer__title">
+                        Доставка14 © 2020
+                    </div>
+                    <div class="footer__text">
+                        Обособленное подразделение город Мирный Федеральное государственное 
+                        унитарное предприятие "Главное военно-строительное управление №14".
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="hide">
+
+        <div class="cartModal__item item1">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/1.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Окрошка</div>
+                    <div class="cartModal__item-price">100р *&nbsp;<span class="num1">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close1" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item2">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/2.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Борщ</div>
+                    <div class="cartModal__item-price">90р *&nbsp;<span class="num2">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close2" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item3">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/3.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Котлеты рыбные</div>
+                    <div class="cartModal__item-price">75р *&nbsp;<span class="num3">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close3" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item4">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/4.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Котлеты куриные</div>
+                    <div class="cartModal__item-price">80р *&nbsp;<span class="num4">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close4" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item5">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/5.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Рыба под маринадом</div>
+                    <div class="cartModal__item-price">105р *&nbsp;<span class="num5">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close5" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item6">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/6.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Рассольник с курицей</div>
+                    <div class="cartModal__item-price">55р *&nbsp;<span class="num6">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close6" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item7">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/7.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Щи</div>
+                    <div class="cartModal__item-price">60р *&nbsp;<span class="num7">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close7" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item8">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/8.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Суп гороховый</div>
+                    <div class="cartModal__item-price">80р *&nbsp;<span class="num8">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close8" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item9">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/9.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Суп пюре грибной</div>
+                    <div class="cartModal__item-price">60р *&nbsp;<span class="num9">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close9" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item10">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/hot-food/10.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Пельмени</div>
+                    <div class="cartModal__item-price">110р *&nbsp;<span class="num10">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close10" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item11">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/1.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Салат из моркови с изюмом</div>
+                    <div class="cartModal__item-price">45р *&nbsp;<span class="num11">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close11" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item12">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/2.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Салат свекольный</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num12">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close12" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item13">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/3.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Салат Цезарь</div>
+                    <div class="cartModal__item-price">60р *&nbsp;<span class="num13">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close13" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item14">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/4.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Салат "Столичный" с курицей</div>
+                    <div class="cartModal__item-price">55р *&nbsp;<span class="num14">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close14" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item15">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/5.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Салат картофельный с грибами</div>
+                    <div class="cartModal__item-price">45р *&nbsp;<span class="num15">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close15" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item16">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/6.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Винегрет овощной</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num16">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close16" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item17">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/7.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Салат витаминный</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num17">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close17" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item18">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/8.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Салат Мимоза</div>
+                    <div class="cartModal__item-price">60р *&nbsp;<span class="num18">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close18" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item19">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/9.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Салат ольвье</div>
+                    <div class="cartModal__item-price">60р *&nbsp;<span class="num19">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close19" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item20">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/salad/10.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Селедка под шубой</div>
+                    <div class="cartModal__item-price">50р *&nbsp;<span class="num20">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close20" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item21">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/1.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Пончик</div>
+                    <div class="cartModal__item-price">35р *&nbsp;<span class="num21">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close21" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item22">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/2.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Пирожок с яблоком</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num22">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close22" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item23">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/3.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Пирожок с капустой</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num23">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close23" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item24">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/4.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Круасан с шоколадом</div>
+                    <div class="cartModal__item-price">55р *&nbsp;<span class="num24">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close24" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item25">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/5.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Блинчики со сгущенкой</div>
+                    <div class="cartModal__item-price">45р *&nbsp;<span class="num25">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close25" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item26">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/6.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Бутерброд с колбасой и сыром</div>
+                    <div class="cartModal__item-price">35р *&nbsp;<span class="num26">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close26" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item27">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/7.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Творожная запеканка</div>
+                    <div class="cartModal__item-price">55р *&nbsp;<span class="num27">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close27" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item28">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/8.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Пирожок с ветчиной и сыром</div>
+                    <div class="cartModal__item-price">50р *&nbsp;<span class="num28">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close28" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item29">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/9.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Гамбургер</div>
+                    <div class="cartModal__item-price">70р *&nbsp;<span class="num29">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close29" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item30">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/baker/10.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Хот-Дог</div>
+                    <div class="cartModal__item-price">65р *&nbsp;<span class="num30">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close30" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item31">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/1.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Сок гранатовый</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num31">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close31" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item32">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/2.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Сок персиковый</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num32">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close32" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item33">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/3.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Чай зеленый</div>
+                    <div class="cartModal__item-price">25р *&nbsp;<span class="num33">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close33" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item34">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/4.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Чай черный</div>
+                    <div class="cartModal__item-price">25р *&nbsp;<span class="num34">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close34" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item35">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/5.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Лимонад Дюшес</div>
+                    <div class="cartModal__item-price">35р *&nbsp;<span class="num35">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close35" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item36">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/6.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Сок яблочный</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num36">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close36" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item37">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/7.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Сок вишневый</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num37">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close37" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item38">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/8.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Сок апельсиновый</div>
+                    <div class="cartModal__item-price">40р *&nbsp;<span class="num38">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close38" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item39">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/9.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Капучино</div>
+                    <div class="cartModal__item-price">50р *&nbsp;<span class="num39">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close39" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cartModal__item item40">
+            <div class="cartModal__item-wrap">
+                <img src="img/food/drink/10.jpg" class="cartModal__item-img">
+                <div class="cartModal__item-info">
+                    <div class="cartModal__item-title">Американо</div>
+                    <div class="cartModal__item-price">60р *&nbsp;<span class="num40">0</span></div>
+                </div>
+            </div>
+            <div class="cartModal__reset-item">
+                <button type="button" class="close close40" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var a=n[o];" "==a.charAt(0);)a=a.substring(1);if(0==a.indexOf(e))return a.substring(e.length,a.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0],wpSidebar=document.getElementById("adminmenuwrap"),wpTopBarRight=document.getElementById("wp-admin-bar-top-secondary");if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;} .upgrade-btn-sidebar {display: none;} #wp-toolbar .top-bar-upgrade-btn {width: 52px; height: 46px !important; padding: 0 !important;} .top-bar-upgrade-btn__text {display: none;} .dashicons-star-filled.top-bar-upgrade-btn__icon::before {font-size: 28px; margin-top: 10px; width: 28px; height: 28px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; right: 0; display: flex; padding: 0 5%}} @media only screen and (max-width: 960px) {.upgrade-btn-sidebar {border-radius: 0 !important; padding: 10px 0 !important; margin: 0 !important;} .upgrade-btn-sidebar__icon {display: block !important; margin: auto;} .upgrade-btn-sidebar__text {display: none;}}  .web-hosting-90-off-image {max-width: 90%; margin-top: 20px;} .content-wrapper {z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 12px -6px #cc292f; max-width: 350px; border: 0; border-radius: 3px; background-color: #6747c7 !important; padding: 15px 55px !important;  margin-bottom: 48px; font-size: 14px; font-weight: 800; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: rgba(103,71,199, 0.9) !important;} .upgrade-btn-sidebar {text-align:center;background-color:#ff4546;max-width: 350px;border-radius: 3px;border: 0;padding: 12px; margin: 20px 10px;display: block; font-size: 12px;color: #ffffff;font-weight: 700;text-decoration: none;} .upgrade-btn-sidebar:hover, .upgrade-btn-sidebar:focus, .upgrade-btn-sidebar:active {background-color: rgba(255,69,70, 0.9); color: #ffffff;} .upgrade-btn-sidebar__icon {display: none;} .top-bar-upgrade-btn {height: 100% !important; display: inline-block !important; padding: 0 10px !important; color: #ffffff; cursor: pointer;} .top-bar-upgrade-btn:hover, .top-bar-upgrade-btn:active, .top-bar-upgrade-btn:focus {background-color: #ff4546 !important; color: #ffffff !important;} .top-bar-upgrade-btn__icon {margin-right: 6px;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Upgrade Now</button>',(notification=notification[0]).setAttribute("style","background-color: #f8f8f8; border-left-color: #6747c7 !important;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Limited Time Offer",h1Tag.setAttribute("style","color: #32454c;  margin-top: 48px; font-size: 48px; font-weight: 700;");var h2Tag=document.createElement("H2");h2Tag.innerHTML="From $0.79/month",h2Tag.setAttribute("style","color: #32454c; margin: 20px 0 45px 0; font-size: 48px; font-weight: 700;"),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Don’t miss the opportunity to enjoy up to <strong>4x WordPress Speed, Free SSL and all premium features</strong> available for a fraction of the price!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 18px; font-weight: 300; color: #6f7c81; margin-bottom: 20px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/wp-inject-default-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0];wpSidebar.insertAdjacentHTML("beforeend",'<a href="https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&amp;utm_medium=panel&amp;utm_campaign=000-wp-sidebar" target="_blank" class="upgrade-btn-sidebar"><span class="dashicons dashicons-star-filled upgrade-btn-sidebar__icon"></span><span class="upgrade-btn-sidebar__text">Upgrade</span></a>'),wpTopBarRight.insertAdjacentHTML("beforebegin",'<a class="top-bar-upgrade-btn" href="https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&amp;utm_medium=panel&amp;utm_campaign=000-wp-top-bar" target="_blank"><span class="ab-icon dashicons-before dashicons-star-filled top-bar-upgrade-btn__icon"></span><span class="top-bar-upgrade-btn__text">Go Premium</span></a>')}

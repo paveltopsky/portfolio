@@ -1,0 +1,60 @@
+.sr-only {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+table,
+.form,
+.table-title,
+.addNew-btn {
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.table-title {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.admin__table-users,
+.admin__table-depart,
+.admin__table-food,
+.admin__table-menu,
+.admin__table-orders,
+.admin__table-history,
+.form {
+    display: none;
+}
+
+.admin__table-users {
+    
+}
+
+.admin__table-depart {
+    
+}
+
+.admin__table-food {
+    
+}
+
+.admin__table-menu {
+    
+}
+
+.admin__table-orders {
+    
+}
+
+.admin__table-history {
+    
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
