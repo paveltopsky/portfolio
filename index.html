@@ -4,24 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikita portfolio</title>
+  <title>Nikita Vakula - Interactive Frontend Developer</title>
   <!-- Custom fonts for this template-->
-  <link
-    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400&display=swap" rel="stylesheet">
   <!-- Normalize -->
   <link href="css/normalize.css" rel="stylesheet">
   <!-- Bootstrap Grid CSS -->
   <link href="vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
   <!-- Custom styles for this template-->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css?ver=1" rel="stylesheet">
+  <link href="css/media.css?ver=1" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="container-fluid container-lg">
       <nav class="header__nav d-flex align-items-center justify-content-between">
         <div class="header__logo">
           <a href="index.html">
@@ -30,10 +29,10 @@
         </div>
         <!-- /.header__logo -->
         <ul class="header__list d-flex">
-          <li class="header__list-item mr-5">
+          <li class="header__list-item mr-3 mr-md-5">
             <a href="#">Сайты</a>
           </li>
-          <li class="header__list-item mr-5">
+          <li class="header__list-item mr-3 mr-md-5">
             <a href="#">Эксперименты</a>
           </li>
           <li class="header__list-item">
@@ -69,10 +68,101 @@
         </button>
 
       </div>
+
     </div>
     <!-- /.header__content -->
 
-    <ul class="social-vertical-stripe">
+    <!-- PARALLAX -->
+      <!-- line -->
+      <svg id="line" xmlns="http://www.w3.org/2000/svg" width="26" viewbox="0 0 26 23">
+        <path stroke-width="3" stroke-miterlimit="10" d="M4.92 2.514L21.964 19.56">
+        </path>
+      </svg>
+      <!-- semi circle -->
+      <svg id="semi-circle" xmlns="http://www.w3.org/2000/svg" width="29" viewbox="0 0 29 15">
+        <path stroke-width="3" stroke-miterlimit="10"
+          d="M1.5 14.546C1.5 7.34 7.34 1.5 14.547 1.5c7.205 0 13.046 5.84 13.046 13.046">
+        </path>
+      </svg>
+      <!-- spring -->
+      <svg id="spring" xmlns="http://www.w3.org/2000/svg" width="17" viewbox="0 0 17 36">
+        <path stroke-width="3" stroke-miterlimit="10"
+          d="M9.945 34.614S1.46 31.38 1.5 23.92s11.73-4.797 11.73-4.797S3.82 16.708 4.18 8.77s12.784-7.255 12.784-7.255">
+        </path>
+      </svg>
+      <!-- triangle -->
+      <svg id="triangle" xmlns="http://www.w3.org/2000/svg" width="26" viewbox="0 0 26 23">
+        <path stroke-width="3" stroke-miterlimit="10" d="M12.837 3l5.12 8.868 5.12 8.868H2.597l5.12-8.868z">
+        </path>
+      </svg>
+      
+      <div id="p1">
+        <svg data-depth="20" width="26px" height="23px">
+          <use xlink:href="#line" class="aqua"></use>
+        </svg>
+      </div>
+
+      <div id="p2">
+        <svg data-depth="20" width="29px" height="15px">
+          <use xlink:href="#semi-circle" class="aqua"></use>
+        </svg>
+      </div>
+
+      <div id="p3">
+        <svg data-depth="20" width="17px" height="36px">
+          <use xlink:href="#spring" class="pink"></use>
+        </svg>
+      </div>
+
+      <div id="p4">
+        <svg data-depth="20" width="26px" height="23px">
+          <use xlink:href="#triangle" class="yellow"></use>
+        </svg>
+      </div>
+
+      <div id="p5">
+        <svg data-depth="20" width="26px" height="23px">
+          <use xlink:href="#triangle" class="pink"></use>
+        </svg>
+      </div>
+
+      <div id="p6">
+        <svg data-depth="20" width="26px" height="23px">
+          <use xlink:href="#triangle" class="aqua"></use>
+        </svg>
+      </div>
+
+      <div id="p7">
+        <svg data-depth="20" width="29px" height="15px">
+          <use xlink:href="#semi-circle" class="aqua"></use>
+        </svg>
+      </div>
+
+      <div id="p8">
+        <svg data-depth="20" width="29px" height="15px">
+          <use xlink:href="#semi-circle" class="yellow"></use>
+        </svg>
+      </div>
+
+      <div id="p9">
+        <svg data-depth="20" width="26px" height="23px">
+          <use xlink:href="#line" class="yellow"></use>
+        </svg>
+      </div>
+
+      <div id="p10">
+        <svg data-depth="20" width="17px" height="36px">
+          <use xlink:href="#spring" class="pink"></use>
+        </svg>
+      </div>
+
+      <div id="p11">
+        <svg data-depth="20" width="26px" height="23px">
+          <use xlink:href="#line" class="aqua"></use>
+        </svg>
+      </div>
+
+    <ul class="social-vertical-stripe d-none d-md-block">
       <li class="social-vertical-stripe__item">
         <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
           <path class="social-path"
@@ -109,43 +199,10 @@
   </header>
   <!-- /.header -->
 
-  <div class="parallax-mask">
-
-    <!-- semi circle -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="29.093" height="14.546" viewbox="0 0 29.093 14.546">
-      <path fill="none" stroke="#CF4981" stroke-width="3" stroke-miterlimit="10"
-        d="M1.5 14.546C1.5 7.34 7.34 1.5 14.547 1.5c7.205 0 13.046 5.84 13.046 13.046">
-      </path>
-    </svg>
-    <!-- triangle -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="25.675" height="22.236" viewbox="0 0 25.675 22.236">
-      <path fill="none" stroke="#CF4981" stroke-width="3" stroke-miterlimit="10"
-        d="M12.837 3l5.12 8.868 5.12 8.868H2.597l5.12-8.868z">
-      </path>
-    </svg>
-    <!-- spring -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="17.046" height="36.016" viewbox="0 0 17.046 36.016">
-      <path fill="none" stroke="#CF4981" stroke-width="3" stroke-miterlimit="10"
-        d="M9.945 34.614S1.46 31.38 1.5 23.92s11.73-4.797 11.73-4.797S3.82 16.708 4.18 8.77s12.784-7.255 12.784-7.255">
-      </path>
-    </svg>
-    <!-- line -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="25.675" height="22.236" id="line" viewbox="0 0 25.675 22.236">
-      <path fill="none" stroke="#CF4981" stroke-width="3" stroke-miterlimit="10" d="M4.92 2.514L21.964 19.56">
-      </path>
-    </svg>
-
-    <svg width="25px" height="25px">
-      <use xlink:href="#line" class="yellow"></use>
-    </svg>
-
-  </div>
-  <!-- /.parallax-mask -->
-
   <main class="main">
 
     <div class="block-subtitle">
-      САЙТЫ
+      <span>САЙТЫ</span>
     </div>
     <div class="block-title">
       Последние Работы
@@ -177,7 +234,6 @@
               </path>
             </svg>
           </button>
-
         </div>
       </div>
 
@@ -190,10 +246,10 @@
         </div>
         <div class="main__item-info main__item-info--right-shift d-flex flex-column align-items-end">
           <div class="main__item-title">
-            Swed Mebel
+            Absolut Quartz
           </div>
           <div class="main__item-subtitle">
-            <i>Направление от фабрики Svenska Möbler.</i>
+            <i>Столешницы из кварцевого алгломерата</i>
           </div>
           <button class="button">
             <span class="button__text">
@@ -205,7 +261,6 @@
               </path>
             </svg>
           </button>
-
         </div>
       </div>
 
@@ -233,7 +288,6 @@
               </path>
             </svg>
           </button>
-
         </div>
       </div>
 
@@ -261,7 +315,6 @@
               </path>
             </svg>
           </button>
-
         </div>
       </div>
 
@@ -335,7 +388,7 @@
     </ul>
 
     <div class="footer__copy">
-      © 2020 Nikita Vakula
+      © 2020 Nikita Vakula - Contact
     </div>
 
   </footer>
@@ -384,8 +437,10 @@
   <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+  <!-- Parallax.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <!-- Custom scripts for all pages-->
-  <script src="js/main.js"></script>
+  <script src="js/main.js?ver=1"></script>
 
 </body>
 
