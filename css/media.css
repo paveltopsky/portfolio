@@ -43,6 +43,99 @@ body {
   }
 }
 
+/* CONTACT MODAL */
+
+@media screen and (max-width: 1200px) {
+  .contact__modal {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__modal {
+    width: 95%;
+  }
+
+  .header__close--contact {
+    right: 50px;
+    top: 100px;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .contact__modal {
+    height: 90%;
+  }
+
+  .contact__modal__content {
+    top: 10%;
+  }
+
+  .header__close--contact {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact__modal {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .contact__modal-block-wrap {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .contact__modal-block {
+    width: 100%;
+  }
+
+  .contact__modal__content {
+    top: 10%;
+    width: 85%;
+  }
+
+  .contact__modal-block.left {
+    order: 1;
+  }
+
+  .contact__modal-block.right {
+    order: 0;
+  }
+
+  .header__close--contact {
+    right: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .contact__modal {
+    width: 100%;
+  }
+
+  .contact__modal-block.left {
+    height: 590px;
+  }
+
+  .contact__modal-block.right {
+    height: 520px;
+  }
+
+  .header__close--contact {
+    width: 30px;
+  }
+
+  .contact__modal__svg-item {
+    width: 60px;
+    margin-right: 10px;
+  }
+}
+
+
 /* MAIN
 ==================================================*/
 
@@ -139,9 +232,42 @@ body {
 /* EXP
 ==================================================*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1150px) {
   .exp__item-circle {
     width: 180px;
     height: 180px;
+  }
+
+  .exp__item-circle {
+    margin-bottom: 40px;
+  }
+}
+
+/* FOOTER
+==================================================*/
+
+@media screen and (max-width: 550px) {
+  .exp__item-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .exp__item-circle {
+    margin-bottom: 40px;
+  }
+
+  .footer__list a {
+    text-align: center;
+    width: 50%;
+    margin: 0 !important;
+    padding: 15px 0;
+  }
+
+  .footer__list {
+    margin-bottom: 10px;
+  }
+
+  .footer__copy {
+    margin-bottom: 10px;
   }
 }
