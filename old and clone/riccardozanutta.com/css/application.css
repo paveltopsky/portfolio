@@ -808,6 +808,10 @@ a img {
   }
 }
 
+.contact-half {
+
+}
+
 .the-button,
 button {
   cursor: pointer;
@@ -4176,7 +4180,7 @@ main {
   opacity: 0;
   width: 50%;
   height: 100%;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .about-contact .half-contact .contact-info {

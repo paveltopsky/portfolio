@@ -14,8 +14,8 @@
   <!-- Bootstrap Grid CSS -->
   <link href="vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
   <!-- Custom styles for this template-->
-  <link href="css/style.css?ver=12" rel="stylesheet">
-  <link href="css/media.css?ver=12" rel="stylesheet">
+  <link href="css/style.css?ver=15" rel="stylesheet">
+  <link href="css/media.css?ver=15" rel="stylesheet">
 </head>
 
 <body>
@@ -118,6 +118,34 @@
     <!-- contact modal -->
     <div class="contact__modal hide">
       <div class="contact__modal-block-wrap">
+        <div class="contact__modal-block right" style="background-color: rgba(28,29,37,.985);">
+          <div class="contact__modal__big-text right">Contact</div>
+          <div class="contact__modal__content right">
+            <div class="contact__modal__title">Let’s talk.</div>
+            <div class="contact__modal__subtitle" style="font-size: 0.95em;">Новые идеи, проекты на фриланс или даже кофе.</div>
+            <div class="contact__modal__form-wrap">
+              <form action="№">
+                <div class="form__item d-flex flex-column mb-4">
+                  <label for="form__name">Имя *</label>
+                  <input id="form__name" name="name" type="text" required autocomplete="off" />
+                </div>
+                <div class="form__item d-flex flex-column mb-4">
+                  <label for="form__mail">E-mail *</label>
+                  <input id="form__mail" name="mail" type="text" required autocomplete="off" />
+                </div>
+                <div class="form__item d-flex flex-column mb-4">
+                  <label for="form__message" class="mb-2">Сообщение *</label>
+                  <textarea name="form__message"></textarea>
+                </div>
+                <input type="submit" value="Отправить" class="button button__text" style="width: 145px; text-align: center;">
+              </form>
+            </div>
+          </div>
+          <div class="header__close header__close--contact">
+            <span class="header__close-bar left"></span>
+            <span class="header__close-bar right"></span>
+          </div>
+        </div>
         <div class="contact__modal-block left" style="background-color: rgba(242, 242, 242, 0.97);">
           <div class="contact__modal__big-text left">About</div>
           <div class="contact__modal__content" style="color: #000;">
@@ -127,13 +155,11 @@
               <!-- I'm Riccardo Zanutta, a 22-year-old Italian Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies.
               I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
               When not working or futzing around with code, I study how to escape from University. Actually for hire. -->
-              Я Никита Вакула, 16-ти летний русский <span>фрилансер Front-end developer.</span> Я странный парень,
+              Я Никита Вакула, ??-ти летний русский <span>фрилансер Front-end developer.</span> Я странный парень,
               который любит
               делать странные вещи с помощью веб-технологий. <br>
-              Мне нравится решать проблемы дизайна, создавать умный пользовательский интерфейс и предоставлять себе
-              полезный опыт, разрабатывая богатый UX&UX веб-приложения. <br>
-              Когда не работает или возиться вокруг с кодом, я изучаю, каким образом вырваться из Университета. На самом
-              деле для автомобилей.
+              Мне нравится <span>решать</span> проблемы дизайна, <span>создавать</span> умный пользовательский интерфейс и делать его удобным,
+              разрабатывая UI&UX для <span>веб-приложений</span>.
             </div>
 
             <div class="contact__modal__svg-wrap d-flex justify-content-around">
@@ -179,34 +205,6 @@
               </div>
             </div>
 
-          </div>
-        </div>
-        <div class="contact__modal-block right" style="background-color: rgba(28,29,37,.985);">
-          <div class="contact__modal__big-text right">Contact</div>
-          <div class="contact__modal__content right">
-            <div class="contact__modal__title">Let’s talk.</div>
-            <div class="contact__modal__subtitle">New projects, freelance inquiry or even a coffee.</div>
-            <div class="contact__modal__form-wrap">
-              <form action="mail.php">
-                <div class="form__item d-flex flex-column mb-4">
-                  <label for="form__name">Name *</label>
-                  <input id="form__name" name="name" type="text" required autocomplete="off" />
-                </div>
-                <div class="form__item d-flex flex-column mb-4">
-                  <label for="form__mail">E-mail *</label>
-                  <input id="form__mail" name="mail" type="text" required autocomplete="off" />
-                </div>
-                <div class="form__item d-flex flex-column mb-4">
-                  <label for="form__message" class="mb-2">Message *</label>
-                  <textarea name="form__message"></textarea>
-                </div>
-                <input type="submit" value="Отправить" class="button button__text" style="width: 145px; text-align: center;">
-              </form>
-            </div>
-          </div>
-          <div class="header__close header__close--contact">
-            <span class="header__close-bar left"></span>
-            <span class="header__close-bar right"></span>
           </div>
         </div>
       </div>
@@ -311,34 +309,44 @@
 
     <ul class="social-vertical-stripe d-none d-md-block">
       <li class="social-vertical-stripe__item">
-        <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
-          <path class="social-path"
-            d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
-        </svg>
+        <a href="https://twitter.com/0VXk4Zvq55pSli9" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+          </svg>
+        </a>
       </li>
       <li class="social-vertical-stripe__item">
-        <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
-          <path class="social-path"
-            d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z" />
-        </svg>
+        <a href="https://vk.com/id432343304" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z" />
+          </svg>
+        </a>
       </li>
       <li class="social-vertical-stripe__item">
-        <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
-          <path class="social-path"
-            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-        </svg>
+        <a href="https://github.com/paveltopsky" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>        
       </li>
       <li class="social-vertical-stripe__item">
-        <svg fill="#b0b2c3" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" class="social-svg">
-          <path class="social-path"
-            d="m255.807 87.087c-.059-.31-.11-.62-.193-.924-.052-.183-.114-.355-.172-.535a11.007 11.007 0 0 0 -.283-.8c-.076-.182-.162-.358-.245-.534a9.74 9.74 0 0 0 -.376-.73c-.096-.176-.207-.342-.313-.51a11.038 11.038 0 0 0 -.842-1.142 11.166 11.166 0 0 0 -.544-.596c-.145-.145-.29-.29-.442-.431a9.07 9.07 0 0 0 -.624-.52c-.165-.128-.327-.26-.5-.377-.061-.044-.117-.096-.182-.138l-116.992-78a10.989 10.989 0 0 0 -12.201 0l-117 77.998c-.065.041-.116.093-.182.138-.172.12-.334.248-.5.376a15.52 15.52 0 0 0 -.624.517 8.604 8.604 0 0 0 -.438.43c-.193.194-.372.39-.548.597-.13.155-.255.31-.376.483-.165.217-.317.438-.465.669-.107.169-.214.334-.314.51a9.593 9.593 0 0 0 -.372.724c-.083.176-.172.355-.245.534-.107.262-.2.531-.286.8-.058.18-.12.355-.169.517-.08.303-.138.61-.193.924-.03.159-.069.314-.09.476-.062.475-.096.951-.096 1.437v78.016c0 .482.034.965.103 1.437.025.173.07.31.104.476.055.31.103.62.207.931.048.172.103.345.172.534.086.276.172.552.276.804.072.172.172.344.241.517.114.241.242.482.38.734.096.172.206.345.31.503.148.242.31.449.482.655.121.173.242.31.38.476.175.207.344.414.551.597.141.137.276.31.448.413.2.173.414.345.62.524.166.138.346.242.483.376.066.034.104.103.173.134l116.968 78.04a10.815 10.815 0 0 0 6.102 1.851 11.06 11.06 0 0 0 6.102-1.85l117-78c.065-.04.12-.089.182-.134.172-.12.334-.248.5-.375.214-.17.424-.345.624-.524.151-.135.296-.283.441-.428a9.876 9.876 0 0 0 .92-1.072c.166-.217.318-.441.466-.669.107-.165.214-.334.314-.503.138-.242.258-.486.375-.734.083-.176.17-.352.245-.531.107-.266.197-.535.283-.804.058-.179.12-.355.172-.534.08-.303.135-.614.193-.924.028-.159.07-.314.086-.476.063-.475.097-.951.097-1.437v-78.003c0-.486-.038-.962-.097-1.438-.027-.169-.079-.306-.113-.475zm-127.81 66.935-38.905-26.021 38.905-26.025 38.907 26.025zm-10.998-71.155-47.692 31.9-38.497-25.754 86.19-57.458v51.312zm-67.477 45.13-27.517 18.406v-36.811zm19.785 13.245 47.693 31.896v51.312l-86.19-57.465 38.498-25.75v.007zm69.69 31.89 47.692-31.896 38.501 25.749-86.193 57.458v-51.312zm67.477-45.128 27.521-18.409v36.815l-27.52-18.413v.007zm-19.785-13.238-47.692-31.896v-51.315l86.193 57.459-38.5 25.752z" />
-        </svg>
+        <a href="https://codepen.io/nikitavakula" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="m255.807 87.087c-.059-.31-.11-.62-.193-.924-.052-.183-.114-.355-.172-.535a11.007 11.007 0 0 0 -.283-.8c-.076-.182-.162-.358-.245-.534a9.74 9.74 0 0 0 -.376-.73c-.096-.176-.207-.342-.313-.51a11.038 11.038 0 0 0 -.842-1.142 11.166 11.166 0 0 0 -.544-.596c-.145-.145-.29-.29-.442-.431a9.07 9.07 0 0 0 -.624-.52c-.165-.128-.327-.26-.5-.377-.061-.044-.117-.096-.182-.138l-116.992-78a10.989 10.989 0 0 0 -12.201 0l-117 77.998c-.065.041-.116.093-.182.138-.172.12-.334.248-.5.376a15.52 15.52 0 0 0 -.624.517 8.604 8.604 0 0 0 -.438.43c-.193.194-.372.39-.548.597-.13.155-.255.31-.376.483-.165.217-.317.438-.465.669-.107.169-.214.334-.314.51a9.593 9.593 0 0 0 -.372.724c-.083.176-.172.355-.245.534-.107.262-.2.531-.286.8-.058.18-.12.355-.169.517-.08.303-.138.61-.193.924-.03.159-.069.314-.09.476-.062.475-.096.951-.096 1.437v78.016c0 .482.034.965.103 1.437.025.173.07.31.104.476.055.31.103.62.207.931.048.172.103.345.172.534.086.276.172.552.276.804.072.172.172.344.241.517.114.241.242.482.38.734.096.172.206.345.31.503.148.242.31.449.482.655.121.173.242.31.38.476.175.207.344.414.551.597.141.137.276.31.448.413.2.173.414.345.62.524.166.138.346.242.483.376.066.034.104.103.173.134l116.968 78.04a10.815 10.815 0 0 0 6.102 1.851 11.06 11.06 0 0 0 6.102-1.85l117-78c.065-.04.12-.089.182-.134.172-.12.334-.248.5-.375.214-.17.424-.345.624-.524.151-.135.296-.283.441-.428a9.876 9.876 0 0 0 .92-1.072c.166-.217.318-.441.466-.669.107-.165.214-.334.314-.503.138-.242.258-.486.375-.734.083-.176.17-.352.245-.531.107-.266.197-.535.283-.804.058-.179.12-.355.172-.534.08-.303.135-.614.193-.924.028-.159.07-.314.086-.476.063-.475.097-.951.097-1.437v-78.003c0-.486-.038-.962-.097-1.438-.027-.169-.079-.306-.113-.475zm-127.81 66.935-38.905-26.021 38.905-26.025 38.907 26.025zm-10.998-71.155-47.692 31.9-38.497-25.754 86.19-57.458v51.312zm-67.477 45.13-27.517 18.406v-36.811zm19.785 13.245 47.693 31.896v51.312l-86.19-57.465 38.498-25.75v.007zm69.69 31.89 47.692-31.896 38.501 25.749-86.193 57.458v-51.312zm67.477-45.128 27.521-18.409v36.815l-27.52-18.413v.007zm-19.785-13.238-47.692-31.896v-51.315l86.193 57.459-38.5 25.752z" />
+          </svg>
+        </a>
       </li>
       <li class="social-vertical-stripe__item">
-        <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
-          <path class="social-path"
-            d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
-        </svg>
+        <a href="https://dribbble.com/Bambaleylo" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
+          </svg>
+        </a>
       </li>
     </ul>
     <!-- /.social-vertical-stripe -->
@@ -484,7 +492,7 @@
     <div class="container-fluid">
       <div class="row">
 
-        <a href="https://codepen.io/paveltopsky/pen/NWGzJra" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
+        <a href="https://codepen.io/nikitavakula/pen/NWGzJra" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
 
           <div class="exp__item__mask"></div>
 
@@ -504,7 +512,7 @@
 
         </a>
 
-        <a href="https://codepen.io/paveltopsky/pen/bGVKZQM?editors=1100" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
+        <a href="https://codepen.io/nikitavakula/pen/bGVKZQM" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
 
           <div class="exp__item__mask"></div>
 
@@ -524,7 +532,7 @@
 
         </a>
 
-        <a href="https://codepen.io/paveltopsky/pen/qBOKKzG" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
+        <a href="https://codepen.io/nikitavakula/pen/qBOKKzG" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
 
           <div class="exp__item__mask"></div>
 
@@ -544,7 +552,7 @@
 
         </a>
 
-        <a href="https://codepen.io/paveltopsky/pen/RwWMzqM" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
+        <a href="https://codepen.io/nikitavakula/pen/RwWMzqM" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
 
           <div class="exp__item__mask"></div>
 
@@ -577,30 +585,16 @@
       </a>
     </div>
 
-    <!-- <ul class="footer__list d-flex justify-content-center flex-wrap">
-      <li class="footer__list-item mr-5 mb-5 mb-sm-0">
-        <a href=#>Twitter</a>
-      </li>
-      <li class="footer__list-item mr-5 mb-5 mb-sm-0">
-        <a href=#>Telegram</a>
-      </li>
-      <li class="footer__list-item mr-5 mb-5 mb-sm-0">
-        <a href=#>GitHub</a>
-      </li>
-      <li class="footer__list-item mr-5 mb-5 mb-sm-0">
-        <a href=#>Codepen</a>
-      </li>
-    </ul> -->
-
     <div class="footer__list d-flex justify-content-center flex-wrap">
-      <a href="#" class="">Twitter</a>
-      <a href="#" class="">Telegram</a>
-      <a href="#" class="">GitHub</a>
-      <a href="#" class="">Codepen</a>
+      <a href="https://twitter.com/0VXk4Zvq55pSli9">Twitter</a>
+      <a href="https://github.com/paveltopsky">GitHub</a>
+      <a href="https://vk.com/id432343304">VK</a>
+      <a href="https://codepen.io/nikitavakula">Codepen</a>
     </div>
 
     <div class="footer__copy">
-      © 2020 Nikita Vakula - Handmade with love❤<br>last update 11.05.2020
+      <div class="mb-2">© 2020 Nikita Vakula - Handmade with love❤</div>
+      last update 11.05.2020
     </div>
 
   </footer>
@@ -612,8 +606,8 @@
   <!-- Parallax.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <!-- Custom scripts for all pages-->
-  <script src="js/main.js?ver=9"></script>
-  <script src="js/parallax.js?ver=7"></script>
+  <script src="js/main.js?ver=12"></script>
+  <script src="js/parallax.js"></script>
 
 </body>
 
